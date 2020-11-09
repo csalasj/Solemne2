@@ -12,8 +12,8 @@ class PlanViewSet(viewsets.ModelViewSet):
     queryset = Plan.objects.all()
     serializer_class = PlanSerializer
     filter_backends = [DjangoFilterBackend, filters.SearchFilter]
-    filterset_fields = ['id', 'name']
-    search_fields = ['id', 'name']
+    filterset_fields = ['id', 'titulo',]
+    search_fields = ['id', 'titulo',]
 
 router = routers.DefaultRouter()
 router.register(r'', PlanViewSet)

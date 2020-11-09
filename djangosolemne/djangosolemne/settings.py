@@ -40,8 +40,7 @@ INSTALLED_APPS = [
     'planes',
     'rest_framework',
     'django_filters',
-    'corsheaders',
-]
+    ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
